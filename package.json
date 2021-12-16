@@ -18,6 +18,7 @@
   "homepage": "https://github.com/drewpate/holy-grail-app#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "redis": "^4.0.1",
     "superagent": "^6.1.0"
   }
 }
