@@ -21,6 +21,29 @@ function Data(props){
         Footer:  {props.data.footer}
     </div>);
 }
+
+function update(section, value) {
+    return new Promise((resolve, reject) =>{
+        var url = '/update/${section}/${value}';
+        superagent
+            .get(url)
+            .end(function(err, res) {
+                err ? reject(null) : resolve(res.body);
+            });
+    });
+}
+
+function read(){
+    return new Promise((resolve, reject) => {
+        var url = '/data';
+        superagent 
+            .get(url)
+            .end(function(err, res) {
+                err ? reject(null) : resolve(res.body);
+            });
+    });
+}
+
 function App(){
     const [data, setData]   = React.useState({header:0,left:0,article:0,right:0,footer:0});    
 
