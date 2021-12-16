@@ -1,0 +1,22 @@
+{
+  "name": "my_holy_grail",
+  "version": "1.0.0",
+  "description": "node app for holy grail",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drewpate/holy-grail-app.git"
+  },
+  "author": "andrewcpate@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drewpate/holy-grail-app/issues"
+  },
+  "homepage": "https://github.com/drewpate/holy-grail-app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

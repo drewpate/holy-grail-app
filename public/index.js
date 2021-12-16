@@ -12,7 +12,7 @@ function PlusMinus(props){
     </>);
 }
 
-function Display(props){
+function Data(props){
     return (<div>
         Header:  {props.data.header}, 
         Left:    {props.data.left}, 
@@ -21,7 +21,6 @@ function Display(props){
         Footer:  {props.data.footer}
     </div>);
 }
-
 function App(){
     const [data, setData]   = React.useState({header:0,left:0,article:0,right:0,footer:0});    
 
@@ -47,3 +46,4 @@ ReactDOM.render(
   <App/>,
   document.getElementById('root')
 );
+
